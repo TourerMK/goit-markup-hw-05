@@ -92,6 +92,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+  color: var(--pressed-state);
+}
 .menu-item::after {
   position: absolute;
   content: "";
@@ -105,11 +110,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-}
-.menu-item:hover,
-.menu-item:focus,
-.menu-item:active {
-  color: var(--pressed-state);
 }
 .active-item {
   color: var(--pressed-state);
